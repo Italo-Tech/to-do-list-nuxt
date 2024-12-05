@@ -1,7 +1,7 @@
 <template>
   <div class="full-screen">
     <div class="message animate__animated animate__fadeIn">
-      <h1 class="animate__animated ">Bem-vindo ao gerenciador de tarefas!</h1>
+      <h1 class="animate__animated ">Olá sou o Ítalo e seja muito bem-vindo ao gerenciador de tarefas!</h1>
 
       <button class="btn btn-primary btn-lg mt-4" @click="navigateToPage">Criar Tarefas</button>
     </div>

@@ -20,7 +20,7 @@ const handleAddTask = (payload) => {
 
     <!-- Descrição -->
     <div class="form-floating mb-3">
-      <textarea class="form-control" id="description" style="height: 100px"></textarea>
+      <textarea v-model="taskStore.new_task.description" class="form-control" id="description" style="height: 100px"></textarea>
       <label for="description">Descrição</label>
     </div>
 

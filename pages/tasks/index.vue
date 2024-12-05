@@ -82,7 +82,7 @@ const handleRemoveTask = (payload) => {
 </script>
 
 <template>
-  <div class="" style="background-color: #002; height: 100vh">
+  <div class="" >
 
     <div class="px-4">
       <div class="row">
