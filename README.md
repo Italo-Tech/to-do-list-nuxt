@@ -1,75 +1,54 @@
-# Nuxt Minimal Starter
+# Projeto Task Manager 🗂️ - Nuxt 3
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+ask Manager é uma aplicação web construída com Nuxt 3, Pinia, Sequelize e MySQL, que permite aos usuários gerenciar suas tarefas de maneira eficiente. O projeto oferece funcionalidades essenciais para criação, leitura, atualização e exclusão de tarefas (CRUD), permitindo que o usuário adicione, edite, visualize e remova tarefas com facilidade.
+
+O sistema conta com uma interface simples e responsiva, baseada em Bootstrap 5, e utiliza SweetAlert para fornecer feedbacks visuais claros e amigáveis. As animações são garantidas pelo Animate.css, tornando a experiência do usuário ainda mais dinâmica e interativa.
+
+Além disso, a aplicação oferece validação de datas, impedindo que o usuário insira datas anteriores à data atual. Tudo isso é suportado por uma base de dados relacional MySQL, onde as tarefas são armazenadas e gerenciadas de maneira eficiente.
+
+Este projeto é uma ótima escolha para quem precisa de uma solução simples e eficaz para o gerenciamento de tarefas e está em busca de uma aplicação prática utilizando as tecnologias mais modernas do ecossistema JavaScript.
+
+## 🚀 Tecnologias Utilizadas
+
+- **[Nuxt 3](https://nuxt.com/docs)**
+- **[Sequelize](https://sequelize.org/)**
+- **[Pinia](https://pinia.vuejs.org/)**
+- **[SweetAlert2](https://sweetalert2.github.io/)**
+- **[Animate.css](https://animate.style/)**
+- **[MySQL](https://www.mysql.com/)**
+- **[Bootstrap 5](https://getbootstrap.com/)**
+
+## 📋 Funcionalidades
+
+**Criação de tarefas diárias**: Configure detalhes como título, descrição, data e status.
+
+### Pré-requisitos
+
+Certifique-se de ter as ferramentas abaixo instaladas:
+- **Node.js** (versão 18 ou superior)
+- **Gerenciador de pacotes**: npm ou yarn
+- **Banco de Dados**: MySQL
 
 ## Setup
 
-Make sure to install dependencies:
+1. **Clone o repositório**:
+   ```bash
+   git clone clone https://github.com/Italo-Tech/to-do-list-nuxt.git
+   cd to-do-list-nuxt
+    ```
+2. **Instale as dependências**:
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
+4. **Banco de Dados: Certifique-se de ter o banco configurado e migrações aplicadas**:
+   ```bash
+   cd server/
+   npx sequelize-cli db:migrate
+   ```
+4. **Execute a Aplicação**:
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+   ```bash
+   npm run dev
+   ```
