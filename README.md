@@ -10,13 +10,13 @@ Este projeto é uma ótima escolha para quem precisa de uma solução simples e 
 
 ## 🚀 Tecnologias Utilizadas
 
-- **[Nuxt 3](https://nuxt.com/docs)**
-- **[Sequelize](https://sequelize.org/)**
-- **[Pinia](https://pinia.vuejs.org/)**
-- **[SweetAlert2](https://sweetalert2.github.io/)**
-- **[Animate.css](https://animate.style/)**
-- **[MySQL](https://www.mysql.com/)**
-- **[Bootstrap 5](https://getbootstrap.com/)**
+- **[Nuxt 3](https://nuxt.com/docs)**: Framework Vue.js para criação de aplicações universais.
+- **[Sequelize](https://sequelize.org/)**: ORM (Object-Relational Mapping) para Node.js, utilizado para interagir com o banco de dados MySQL.
+- **[Pinia](https://pinia.vuejs.org/)**: Gerenciamento de estado para aplicações Vue.js (substituto do Vuex).
+- **[SweetAlert2](https://sweetalert2.github.io/)**: Biblioteca de alertas bonitos e customizáveis para feedbacks.
+- **[Animate.css](https://animate.style/)**: Biblioteca de animações CSS.
+- **[MySQL](https://www.mysql.com/)**: Sistema de gerenciamento de banco de dados relacional.
+- **[Bootstrap 5](https://getbootstrap.com/)**: Framework de design responsivo para criar layouts modernos e acessíveis.
 
 ## 📋 Funcionalidades
 
