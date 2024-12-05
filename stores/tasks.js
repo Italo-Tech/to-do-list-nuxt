@@ -36,13 +36,21 @@ export const useTaskStore = defineStore('tasks', {
       });
     },
     async addTask(task) {
-      try {
-        const response = await axios.post('/api/tasks', task);
-        this.tasks.push(response.data.task);
-        this.getAllTasks()
-      } catch (error) {
-        console.error('Erro ao adicionar tarefa:', error);
-      }
+      axios.post(`/api/tasks`, task).then(response => {
+        this.new_task = {
+          title: '',
+          description: '',
+          status: false,
+          due_date: null
+        }
+        
+        this.getAllTasks();
+
+      }).catch(error => {
+          if(error.request.status === 400) {
+            console.error('Erro ao criar nova tarefa:', error);
+          }
+      });
     },
     async editTask(task) {
       try {

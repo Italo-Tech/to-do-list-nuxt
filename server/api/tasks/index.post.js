@@ -4,7 +4,7 @@ import { useSequelize } from '../../config/sequelize.config';
 export default defineEventHandler(async (event) => {
   const sequelize = useSequelize();
 
-  // Middleware
+  // Middleware, posterior
   // await validateTask(event);
 
   const body = await readBody(event);
@@ -18,6 +18,7 @@ export default defineEventHandler(async (event) => {
       status: false,
       due_date: body.due_date,
     });
+
     return { 
       message: 'Tarefa criada com sucesso!', 
       task: newTask
